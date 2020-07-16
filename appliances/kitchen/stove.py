@@ -1,7 +1,9 @@
-def Stove(Appliance):
+from appliances import Appliance
 
-    def __init__(self, color, heat_method="electric"):
-        super.__init__(color)
+class Stove(Appliance):
 
-    def make_coffee():
-        print("gurgle, gurgle. Ding. Your drug of choice is piping hot and ready!")
+    def __init__(self, color):
+        super().__init__(color)
+
+    def cook_food(self):
+        print("The stove cooked the food. It was well done.")
